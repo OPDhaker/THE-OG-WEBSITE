@@ -25,9 +25,9 @@ html {
     width: 100%;
     height: 100vh;
     background-image: url(img/bg.png);
-    background-size: 30%;
+    background-size: 400px;
     background-repeat: no-repeat;
-    background-position: 90% -10%;
+    background-position: 90% 100%;
     background-blend-mode: color-burn;
 }
 
@@ -418,12 +418,13 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px){
     #header {
-        background-position: 90% 50%;
-        background-size: 50%;
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: 290% 100%;
     }
 
     .header-text {
-        margin-top: 40%;
+        margin-top: 100%;
         font-size: 16px;
     }
 
@@ -496,8 +497,31 @@ nav .fa-solid {
     display: block;
 }
 
-@media screen and (min-width: 400px){
+@media only screen and (max-width: 492px){
+
+    .header-text {
+        margin-top: 110%;
+    }
+}
+
+@media only screen and (max-width: 455px){
     #header {
-        background-size: 40%;
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: -120% 100%;
+    }
+
+    .header-text {
+        margin-top: 90%;
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    #header {
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: -40% 100%;
     }
 }
