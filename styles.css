@@ -433,7 +433,8 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #2a2a2a;
+	background: rgb(26, 26, 26);
+    background: linear-gradient(180deg, rgba(26,26,26,1) 0%, rgba(42,42,42,1) 100%);
     font-weight: 300;
     margin-top: 20px;
 }
