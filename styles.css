@@ -17,6 +17,26 @@ body {
     color: #fff;
 }
 
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0);
+	border-radius: 10px;
+	background-color: #00c800;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #1a1a1a;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #00ff00;
+	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 161, 0, 0.4) 50%, transparent, transparent)
+}
+
 html {
     scroll-behavior: smooth
 }
@@ -29,12 +49,15 @@ html {
 #bg-img {
     position: absolute;
     width: 400px;
-    right: 8%;
-    bottom: 0%;
+    bottom: 0;
+    left: 65%;
+    transition: filter 0.5s;
+    transition: all 0.5s ease-in-out;
 }
 
 #bg-img:hover {
-    filter: drop-shadow(0px 0px 100px #00FF00);
+    filter: drop-shadow(0px 0px 50px #00FF00) opacity(0.7);
+    transition: 0.5s ease-in-out;
 }
 
 .container {
@@ -423,11 +446,11 @@ nav .fa-solid {
 /* ----------media-query---------- */
 
 @media only screen and (max-width: 600px){
-    #bg-img {
+    /* #bg-img {
         background-size: 500px;
         background-repeat: no-repeat;
         background-position: 290% 100%;
-    }
+    } */
 
     .header-text {
         margin-top: 100%;
@@ -511,11 +534,11 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 455px){
-    #bg-img {
+    /* #bg-img {
         background-size: 500px;
         background-repeat: no-repeat;
         background-position: -120% 100%;
-    }
+    } */
 
     .header-text {
         margin-top: 90%;
@@ -525,9 +548,9 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 320px){
-    #bg-img {
+    /* #bg-img {
         background-size: 500px;
         background-repeat: no-repeat;
         background-position: -40% 100%;
-    }
+    } */
 }
