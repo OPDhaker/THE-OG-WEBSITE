@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* 
 font-family: 'Inter', sans-serif;
@@ -6,12 +6,15 @@ font-family: 'Lobster', cursive;
 
 font-family: 'Lobster Two', cursive;
 font-family: 'Unica One', cursive;
+
+font-family: 'Lobster Two', cursive;
+font-family: 'Ubuntu', sans-serif;
  */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Unica One', cursive;
+    font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
 
