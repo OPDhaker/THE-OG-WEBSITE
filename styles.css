@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Syne+Mono&display=swap');
 
 /* 
 font-family: 'Inter', sans-serif;
@@ -12,12 +12,15 @@ font-family: 'Ubuntu', sans-serif;
 
 font-family: 'Coda', cursive;
 font-family: 'Lobster Two', cursive;
+
+font-family: 'Lobster Two', cursive;
+font-family: 'Syne Mono', monospace;
  */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Coda", cursive;
+  font-family: 'Syne Mono', monospace;
   box-sizing: border-box;
 }
 
@@ -441,12 +444,8 @@ form .btn2 {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 25px 0;
-  background: linear-gradient(
-    180deg,
-    rgba(26, 26, 26, 1) 0%,
-    rgba(42, 42, 42, 1) 100%
-  );
+  padding: 20px 0;
+  background: linear-gradient(180deg, rgba(26,26,26,1) 53%, rgba(0,110,0,1) 97%);
   font-weight: 300;
   margin-top: 20px;
 }
@@ -462,14 +461,12 @@ nav .fa-solid {
 /* ----------media-query---------- */
 
 @media only screen and (max-width: 600px) {
-  /* #bg-img {
-        background-size: 500px;
-        background-repeat: no-repeat;
-        background-position: 290% 100%;
-    } */
+  #bg-img {
+    display: none;
+  }
 
   .header-text {
-    margin-top: 100%;
+    margin-top: 50%;
     font-size: 16px;
   }
 
@@ -545,17 +542,19 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 492px) {
+  #bg-img {
+    display: none;
+  }
+  
   .header-text {
-    margin-top: 110%;
+    margin-top: 80%;
   }
 }
 
 @media only screen and (max-width: 455px) {
-  /* #bg-img {
-        background-size: 500px;
-        background-repeat: no-repeat;
-        background-position: -120% 100%;
-    } */
+  #bg-img {
+    display: none;
+  }
 
   .header-text {
     margin-top: 90%;
@@ -564,9 +563,7 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 320px) {
-  /* #bg-img {
-        background-size: 500px;
-        background-repeat: no-repeat;
-        background-position: -40% 100%;
-    } */
+  #bg-img {
+    display: none;
+  }
 }
