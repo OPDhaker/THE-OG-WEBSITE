@@ -87,8 +87,17 @@ nav {
   flex-wrap: wrap;
 }
 
-.logo {
+/* .logo {
   width: 180px;
+} */
+
+nav h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 40px;
+}
+
+nav h1 ind {
+  color: #00ff00;
 }
 
 nav ul li {
@@ -499,6 +508,7 @@ nav .fa-solid {
   nav .fa-solid {
     display: block;
     font-size: 25px;
+    color: #00ff00;
   }
 
   nav ul {
@@ -518,11 +528,17 @@ nav .fa-solid {
     margin: 25px;
   }
 
+  nav ul li a {
+    color: #1a1a1a;
+    font-weight: 700;
+  }
+
   nav ul .fa-solid {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
+    color: #1a1a1a;
   }
 
   .sub-title {
