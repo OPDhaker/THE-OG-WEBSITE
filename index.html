@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="google-site-verification" content="HCNWHzULPvs5KmO0YorpeP3_ez0VktFV2qCCQD7m2DE" />
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/stylesheets/styles.css" />
-		<script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
-		<script src="script.js"></script>
-		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
-		<title>OPDhaker.Codes</title>
-	</head>
-  	<body>
-    	<div id="header">
-      		<img id="bg-img" src="img/om2.png" alt="myFace" />
-      		<div class="container">
-        		<nav>
-					<h1><ind>O</ind>PDhaker<ind>.</ind></h1>
-					<!-- <img src="img/logo.png" alt="logo" class="logo" /> -->
-					<ul id="sidemenu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-					</ul>
-          			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        		</nav>
-        		<div class="header-text">
-					<p>OPDhaker.Codes</p>
-					<h1>Hi, I am <span>OPDhaker</span>,<br />I am from <ind>India</ind>.</h1>
-				</div>
-      		</div>
+<head>
+	<meta name="google-site-verification" content="HCNWHzULPvs5KmO0YorpeP3_ez0VktFV2qCCQD7m2DE" />
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/stylesheets/styles.css" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<script src="scroll.js"></script>
+	<title>OPDhaker.Codes</title>
+</head>
+<body>
+
+	<div id="progress">
+		<span id="progress-value"><i class="fa-solid fa-angle-up"></i></span>
+	</div>
+
+    <div id="header">
+    	<img id="bg-img" src="img/om2.png" alt="myFace" />
+    	<div class="container">
+    		<nav>
+				<h1><ind>O</ind>PDhaker<ind>.</ind></h1>
+				<!-- <img src="img/logo.png" alt="logo" class="logo" /> -->
+				<ul id="sidemenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+      			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    		</nav>
+    		<div class="header-text">
+				<p>OPDhaker.Codes</p>
+				<h1>Hi, I am <span>OPDhaker</span>,<br />I am from <ind>India</ind>.</h1>
+			</div>
     	</div>
+    </div>
     <!-- ----------ABOUT---------- -->
-		<div id="about">
-			<div class="container">
-				<div class="row">
-					<div class="about-col-1">
-						<div class="block">
-							<!-- <img src="img/user.png" alt="car" /> -->
-							<video src = "img/GTR.mp4" autoplay loop muted></video>
-						</div>
+	<div id="about">
+		<div class="container">
+			<div class="row">
+
+				<div class="about-col-1">
+					<div class="block">
+						<!-- <img src="img/user.png" alt="car" /> -->
+						<video src = "img/GTR.mp4" autoplay loop muted></video>
 					</div>
-					<div class="about-col-2">
-						<h1 class="sub-title">About Me</h1>
-						<p>I am a brother, son and a Programmer. I love cars, my dream car is the car in the image AKA Nissan GTR R-34 Z-Tune. Below are my skills, education, experience. Click an individual tab to have a look!</p>
+				</div>
 
-						<div class="tab-titles">
-							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-							<p class="tab-links" onclick="opentab('education')">Education</p>
-							<p class="tab-links" onclick="opentab('experience')">Experience</p>
-						</div>
-
-						<div class="tab-contents active-tab" id="skills">
-							<ul>
-								<li><span>Hardware Programing</span><br />Raspberrypi, Arduino <ind><i class="fa-solid fa-arrow-right-long"></i> learning!</ind></li>
-								<li><span>Web Development</span><br />HTML, CSS, JS, Django</li>
-								<li><span>AR/VR</span><br />Unity</li>
-							</ul>
-						</div>
-
-						<div class="tab-contents" id="education">
-							<ul>
-								<li><span>VII to X-current</span><br />Delhi Public School Kolar Road, Bhopal, Madhya Pradesh</li>
-								<li><span>mid V to VI</span><br />Jawaharlal Nehru School, Bhopal, Madhya Pradesh</li>
-								<li><span>KG-1 to mid V</span><br />Velamal Vidyalaya, Chennai, Tamil Nadu</li>
-								<li><span>Python & JavaScript</span><br />Certified course by CampK12</li>
-							</ul>
-						</div>
-
-						<div class="tab-contents" id="experience">
-							<ul>
-								<li><span>(C)ync V 8.0</span><br />Second position in event (C)ode.</li>
-								<li><span>ExtraQuadrata</span><br />Member of Organizing Commitee in Site Incroyable (Web Development competition)</li>
-							</ul>
-						</div>
-
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>I am a brother, son and a Programmer. I love cars, my dream car is the car in the image AKA Nissan GTR R-34 Z-Tune. Below are my skills, education, experience. Click an individual tab to have a look!</p>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('education')">Education</p>
+						<p class="tab-links" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
 					</div>
+
+					<div class="tab-contents active-tab" id="education">
+						<ul>
+							<li><span>XI <ind><i class="fa-solid fa-arrow-right-long"></i> current!</ind></span><br />FIITJEE Integrated Classroom Program, Nagpur, Maharashtra</li>
+							<li><span>VII to X</span><br />Delhi Public School Kolar Road, Bhopal, Madhya Pradesh</li>
+							<li><span>mid V to VI</span><br />Jawaharlal Nehru School, Bhopal, Madhya Pradesh</li>
+							<li><span>KG-1 to mid V</span><br />Velamal Vidyalaya, Chennai, Tamil Nadu</li>
+							<li><span>Python & JavaScript</span><br />Certified course by CampK12</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="skills">
+						<ul>
+							<li><span>Hardware Programing</span><br />Raspberrypi, Arduino <ind><i class="fa-solid fa-arrow-right-long"></i> learning!</ind></li>
+							<li><span>Web Development</span><br />HTML, CSS, JS, Django</li>
+							<li><span>AR/VR</span><br />Unity</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>(C)ync V 8.0</span><br />Second position in event (C)ode.</li>
+							<li><span>ExtraQuadrata</span><br />Member of Organizing Commitee in Site Incroyable (Web Development competition)</li>
+						</ul>
+					</div>
+
 				</div>
 			</div>
+
 		</div>
+	</div>
     <!-- ----------SERVICES---------- -->
     <div id="services">
       	<div class="container">
@@ -145,6 +156,140 @@
 					</div>
 				</div>
 
+				<!-- <div class="work">
+					<img src="../img/mother.jpg" alt="work-7">
+					<div class="layer">
+						<h3>Archana Dhaker</h3>
+						<p>A website made by me for my mother <i class="fa-solid fa-heart"></i>.</p>
+						<a href="https://opdhaker.me/Archana" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="../img/nature.png" alt="work-6">
+					<div class="layer">
+						<h3>NaHack</h3>
+						<p>Yet another website for an inter DPS competition.</p>
+						<a href="https://nahack.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="../img/diwali.png" alt="work-5">
+					<div class="layer">
+						<h3>Happy Diwali</h3>
+						<p>A random website that was made to wish Diwali.</p>
+						<a href="https://opddiwali.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+				
+				<div class="work">
+					<img src="../img/rebels.png" alt="work-4">
+					<div class="layer">
+						<h3>Rebels</h3>
+						<p>I learned and used a new framework(Tailwind CSS).</p>
+						<a href="https://opdhaker.github.io/rebels" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+				
+				<div class="work">
+					<img src="../img/work-1.png" alt="work-3">
+					<div class="layer">
+						<h3>eCommerce Website</h3>
+						<p>This is a website I made for an interschool competition. Click the icon below to see demo.</p>
+						<a href="https://opdhaker.github.io/vendraw" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+				
+				<div class="work">
+					<img src="../img/work-3.png" alt="work-2">
+					<div class="layer">
+						<h3>VR Application</h3>
+						<p>This is a Virtual Reality application. Click the icon below to see demo.</p>
+						<a href="https://www.youtube.com/watch?v=ZFep4rA4dvA&ab_channel=OmPratapDhaker" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="../img/work-2.png" alt="work-1">
+					<div class="layer">
+						<h3>AR Application</h3>
+						<p>This is an Augmented Reality based project. Click the icon below to see demo.</p>
+						<a href="https://www.youtube.com/watch?v=O8ZyGRB-cWs&ab_channel=OmPratapDhaker" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div> -->
+
+				<!-- <div class="body swiper">
+                    <ul class="swiper-wrapper">
+
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="img/om2.png" alt="Om Pratap Dhaker">
+                                </div>
+                                <div class="aside">
+                                    <p>He is a programmer who is constantly trying to improve his skills. He is one of the prominent feather in the DPS Kolar's cap. He is a car guy who is obsessed with the JDMs. He is quite good at surprise rick rolls. Lastly He is the one who converts coffee to code.</p>
+                                    <div class="name">
+                                        <h4>Om Pratap Dhaker</h4>
+                                        <p>Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="../img/ppl/dhairya.jpeg" alt="Dhairya Garg">
+                                </div>
+                                <div class="aside">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error, voluptatum perspiciatis modi excepturi officia saepe fugiat magni cupiditate vitae!</p>
+                                    <div class="name">
+                                        <h4>Dhairya Garg</h4>
+                                        <p>Knowledgeable Person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="../img/ppl/buddha.jpeg" alt="Buddha Dev Das">
+                                </div>
+                                <div class="aside">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error, voluptatum perspiciatis modi excepturi officia saepe fugiat magni cupiditate vitae!</p>
+                                    <div class="name">
+                                        <h4>Buddha Dev Das</h4>
+                                        <p>Gamer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="../img/ppl/user.png" alt="Devansh Panthi">
+                                </div>
+                                <div class="aside">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error, voluptatum perspiciatis modi excepturi officia saepe fugiat magni cupiditate vitae!</p>
+                                    <div class="name">
+                                        <h4>Devansh Panthi</h4>
+                                        <p>Never Gonna Give you up!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div> -->
+
         	</div>
         	<a href="/works" class="btn">See More</a>
       	</div>
@@ -204,5 +349,6 @@
 			sidemeu.style.right = "-200px";
 		}
     </script>
-    </body>
+
+</body>
 </html>
