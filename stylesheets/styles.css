@@ -153,6 +153,10 @@ nav ul li a:hover::after {
   	color: #00ff00;
 }
 
+#education ul li span ind {
+	text-shadow: 0 0 5px #00ff00;
+}
+
 #progress {
 	position: fixed;
 	bottom: 20px;
