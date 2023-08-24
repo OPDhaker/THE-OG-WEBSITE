@@ -31,8 +31,8 @@ body {
 
 :root {
       --background: #1a1a1a;
-      --green: #e03809;
-      --green-hover: #fd6035;
+      --green: #00ff00;
+      --green-hover: #00c800;
 }
 
 body::-webkit-scrollbar-track {
@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
       background-image: -webkit-linear-gradient(
             90deg,
             transparent,
-            rgba(253, 96, 53, 0.4) 50%,
+            rgba(0, 200, 0, 0.4) 50%,
             transparent,
             transparent
 );
@@ -79,7 +79,7 @@ html {
 
 #bg-img:hover {
       filter: drop-shadow(0px 0px 50px var(--green))
-              opacity(0.7);
+                  opacity(0.7);
       transition: 0.5s ease-in-out;
 }
 
@@ -445,7 +445,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left .btn2 {
-      padding: 14px 30px;
+      padding: 15px 30px;
 }
 
 .contact-left a i {
@@ -522,7 +522,7 @@ form .btn2 {
       width: 100%;
       text-align: center;
       padding: 20px 0;
-      background: linear-gradient(180deg, rgba(26, 26, 26, 1) 53%, rgba(224, 56, 9, 1) 97%);
+      background: linear-gradient(180deg, rgba(26, 26, 26, 1) 53%, rgba(0, 255, 0, 1) 175%);
       font-weight: 300;
       margin-top: 20px;
 }
